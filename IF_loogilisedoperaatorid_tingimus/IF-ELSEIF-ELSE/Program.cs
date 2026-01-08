@@ -10,6 +10,24 @@
             //kui ta on lühem kui 2m, ütle tavaline kolge
             //kui ta on pikem kui 2m, ütle hiiglane
 
+            Console.WriteLine("Kui pikk sa oled? sisesta sentimeetrites");
+            int pikkus = int.Parse(Console.ReadLine());
+            if (pikkus < 0)
+            {
+                Console.WriteLine("Selline pikkus on võimatu");
+            }
+            else if (pikkus < 100)
+            {
+                Console.WriteLine("Oled juntsu, hit the gym");
+            }
+            else if (pikkus < 200)
+            {
+                Console.WriteLine("Oled normi pikkusega kolge");
+            }
+            else if (pikkus > 200)
+            {
+                Console.WriteLine("Ossaraks, vaat kus hiiglane! true highmaxxer ♥♥");
+            }
             //küsi kasutajalt kui vana ta on
             //küsi kasutajalt praegust aastaarvu
             //lahuta aastast kasutaja vanus
@@ -38,8 +56,8 @@
             //  kui 2FA kood on pikem kui 6 tähte, ütle sissepääs keelatud, kood on liiga pikk
             //  kui 2FA kood on 6 tähte, siis lase sisse, öeldes "oled sissepääsenud"
             //NB: 2FA kood ei pea matchima eksisteeriva näitega nagu parool.
-            
-            
+
+
         }
     }
 }
